@@ -100,7 +100,7 @@ class TitleState extends MusicBeatState
 		
 		//trace(path, FileSystem.exists(path));
 
-		#if (polymod && !windows)
+		#if (polymod)
 		if (sys.FileSystem.exists('polymods/')) {
 			var folders:Array<String> = [];
 			for (file in sys.FileSystem.readDirectory('polymods/')) {
