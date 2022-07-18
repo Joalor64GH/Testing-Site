@@ -33,7 +33,7 @@ override function create() {
 }
 
 override function update(elapsed:Float) {
-    if (FlxG.keys.justPressed.BACK) {
+    if (FlxG.keys.justPressed.ESCAPE) {
         FlxG.switchState(new MainMenuState());
     }
     if (dvdLogo.x > FlxG.width - dvdLogo.width || dvdLogo.x < 0) {
@@ -46,7 +46,7 @@ override function update(elapsed:Float) {
     }
 }
 
-override function switchColor() {
+function switchColor() {
     curColor = (curColor + 1) % colors.length;
     dvdLogo.setColorTransform(0, 0, 0, 1, colors[curColor][0], colors[curColor][1], colors[curColor][2]);
     }
