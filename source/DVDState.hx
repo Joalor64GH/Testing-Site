@@ -49,4 +49,5 @@ function update(elapsed:Float) {
 function switchColor() {
     curColor = (curColor + 1) % colors.length;
     dvdLogo.setColorTransform(0, 0, 0, 1, colors[curColor][0], colors[curColor][1], colors[curColor][2]);
+    }
 }
