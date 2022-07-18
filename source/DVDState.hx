@@ -33,7 +33,7 @@ override function create() {
 }
 
 override function update(elapsed:Float) {
-    if (FlxG.state.controls.BACK) {
+    if (FlxG.keys.justPressed.BACK) {
         FlxG.switchState(new MainMenuState());
     }
     if (dvdLogo.x > FlxG.width - dvdLogo.width || dvdLogo.x < 0) {
