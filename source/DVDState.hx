@@ -1,4 +1,4 @@
-import package;
+package;
 
 var dvdLogo:FlxSprite;
 var colors = [
