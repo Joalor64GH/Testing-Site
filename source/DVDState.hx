@@ -20,7 +20,7 @@ var colors = [
     [33, 169, 141]
 ];
 var curColor:Int = 0;
-function create() {
+override function create() {
     dvdLogo = new FlxSprite(0, 0);
     dvdLogo.loadGraphic(Paths.image('dvdlogo'));
     dvdLogo.setGraphicSize(200, 5);
@@ -32,7 +32,7 @@ function create() {
     FlxG.state.add(dvdLogo);
 }
 
-function update(elapsed:Float) {
+override function update(elapsed:Float) {
     if (FlxG.state.controls.BACK) {
         FlxG.switchState(new MainMenuState());
     }
@@ -46,7 +46,7 @@ function update(elapsed:Float) {
     }
 }
 
-function switchColor() {
+override function switchColor() {
     curColor = (curColor + 1) % colors.length;
     dvdLogo.setColorTransform(0, 0, 0, 1, colors[curColor][0], colors[curColor][1], colors[curColor][2]);
     }
