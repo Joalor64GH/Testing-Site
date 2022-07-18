@@ -1,4 +1,4 @@
-import("MainMenuState");
+import package;
 
 var dvdLogo:FlxSprite;
 var colors = [
