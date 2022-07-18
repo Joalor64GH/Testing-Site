@@ -1,5 +1,9 @@
 package;
 
+import flixel.FlxSprite;
+import flixel.input.keyboard.FlxKey;
+import flixel.util.FlxColor;
+
 var dvdLogo:FlxSprite;
 var colors = [
     [255, 255, 255],
