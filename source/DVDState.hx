@@ -1,8 +1,14 @@
 package;
 
+import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.input.keyboard.FlxKey;
 import flixel.util.FlxColor;
+
+using StringTools;
+
+class DVDState extends MusicBeatState
+{
 
 var dvdLogo:FlxSprite;
 var colors = [
